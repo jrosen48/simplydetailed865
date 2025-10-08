@@ -21,3 +21,4 @@ These images are referenced in:
 - Homepage (`index.qmd`) - Gallery section
 - Gallery page (`gallery.qmd`) - Full gallery view
 - About page (`about.qmd`) - Team photo
+
