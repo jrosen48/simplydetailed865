@@ -2,19 +2,15 @@
 title: "Simply Detailed 865"
 ---
 
+![](images/FullLogo_Transparent.png){width="300"}
+
 Simply Detailed LLC is a locally-owned and operated and licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning serices for areas that need extra attention.
 
-## See Our Work!
-
-![](images/IMG_0687.jpeg)
-
-![](images/IMG_3141.jpeg)
-
-![](images/IMG_0686.jpeg)
+![](images/IMG_0687.jpeg){fig-align="center" width="1000"}
 
 ## Contact
 
-Contact us today for a free estimate!
+Contact us today for a *free* estimate!
 
 **Phone:** 865-361-9738 (text or call!)
 
