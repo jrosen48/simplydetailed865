@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Simply Detailed 865"
+  title: "Simply Detailed LLC"
   navbar:
     left:
       - href: index.qmd
