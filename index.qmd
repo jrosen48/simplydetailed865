@@ -4,7 +4,7 @@ title: "Simply Detailed LLC"
 
 ![](images/FullLogo_Transparent.png){width="300"}
 
-Simply Detailed LLC is a locally-owned, operated, licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning services for areas that need extra attention. The possibilities are truly endless in your requests for your cleaning needs. Simply Detailed LLC strives to make every clean better, helping busy families and professionals is our specialty. Every Clean, Every Time.
+Simply Detailed LLC is a locally-owned, operated, licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning services for areas that need extra attention. The possibilities are truly endless in your requests for your cleaning needs. Simply Detailed LLC strives to make every clean better, helping busy families and professionals is our specialty. Every Clean, Every Time.
 
 ![](images/IMG_0687.jpeg){fig-align="center" width="1000"}
 
@@ -17,3 +17,5 @@ Contact us today for a *free* estimate!
 **Email:** simplydetailed865\@gmail.com
 
 **Service Area:** Knoxville & Surrounding Areas
+
+**Please See our service area (and reviews) [here](location.qmd)!**

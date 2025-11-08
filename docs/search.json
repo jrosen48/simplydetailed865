@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Simply Detailed LLC",
-    "section": "",
-    "text": "Simply Detailed LLC is a locally-owned, operated, licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning services for areas that need extra attention. The possibilities are truly endless in your requests for your cleaning needs. Simply Detailed LLC strives to make every clean better, helping busy families and professionals is our specialty. Every Clean, Every Time."
-  },
-  {
-    "objectID": "index.html#see-our-work",
-    "href": "index.html#see-our-work",
-    "title": "Simply Detailed 865",
-    "section": "See Our Work!",
-    "text": "See Our Work!"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Simply Detailed LLC",
-    "section": "Contact",
-    "text": "Contact\nContact us today for a free estimate!\nPhone: 865-361-9738 (text or call!)\nEmail: simplydetailed865@gmail.com\nService Area: Knoxville & Surrounding Areas"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Simply Detailed LLC",
@@ -40,5 +19,19 @@
     "title": "About Simply Detailed LLC",
     "section": "See Our Work!",
     "text": "See Our Work!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Simply Detailed LLC",
+    "section": "",
+    "text": "Simply Detailed LLC is a locally-owned, operated, licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning services for areas that need extra attention. The possibilities are truly endless in your requests for your cleaning needs. Simply Detailed LLC strives to make every clean better, helping busy families and professionals is our specialty. Every Clean, Every Time."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Simply Detailed LLC",
+    "section": "Contact",
+    "text": "Contact\nContact us today for a free estimate!\nPhone: 865-361-9738 (text or call!)\nEmail: simplydetailed865@gmail.com\nService Area: Knoxville & Surrounding Areas\nPlease See our service area (and reviews) here!"
   }
 ]
