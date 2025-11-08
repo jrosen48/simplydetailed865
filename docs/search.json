@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n\nThis is a Quarto website for Simply Detailed LLC, a locally-owned cleaning service in Knoxville, TN. The website is a static business site built with Quarto and published to GitHub Pages.\n\n\n\n\n\nquarto render\nThis builds the entire website and outputs to the docs/ directory (configured in _quarto.yml).\n\n\n\nquarto preview\nLaunches a live preview server with auto-reload when files change.\n\n\n\nThe site is published to GitHub Pages from the docs/ directory. After making changes:\nquarto render\ngit add .\ngit commit -m \"Update website\"\ngit push\n\n\n\n\n\n\n\nProject Type: Website\nOutput Directory: docs/ (GitHub Pages serves from this directory)\nTheme: Cosmo with custom branding\nCustom Styles: styles.css contains brand-specific styling with teal (#00b3b3) primary color\n\n\n\n\nThe website consists of several .qmd (Quarto Markdown) files that define pages:\n\nindex.qmd: Home page with company overview and contact information\nabout.qmd: About page featuring owner Meredith Dalton and work examples\nlocation.qmd: Service area map (embedded Google Maps iframe)\nphotos.qmd: Photo gallery of work\n\n\n\n\nNavigation is defined in _quarto.yml under website.navbar. The navbar includes: - Home (index.qmd) - About - Location\n\n\n\nCustom CSS in styles.css uses: - Primary teal color (#00b3b3) for links and brand - Purple-to-teal gradients for visual elements - Card hover effects for interactive elements - Responsive design with Bootstrap components\n\n\n\n\nimages/: Contains business photos and logo\n\nFullLogo_Transparent.png: Company logo\nVarious .jpeg files: Before/after cleaning photos\n\n\n\n\n\n\ndocs/: Production build directory (served by GitHub Pages)\n_site/: Quarto build cache (gitignored)\n.quarto/: Quarto metadata and cache (gitignored)\n\n\n\n\n\nWhen editing content: - Images are referenced using Quarto syntax: ![](images/filename.ext){width=\"300\"} - Contact information is on the home page (index.qmd) - HTML can be embedded using ```{=html} blocks (see location.qmd for example) - The site uses embedded resources (embed-resources: true) for self-contained pages"
+  },
+  {
+    "objectID": "CLAUDE.html#project-overview",
+    "href": "CLAUDE.html#project-overview",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This is a Quarto website for Simply Detailed LLC, a locally-owned cleaning service in Knoxville, TN. The website is a static business site built with Quarto and published to GitHub Pages."
+  },
+  {
+    "objectID": "CLAUDE.html#build-and-development-commands",
+    "href": "CLAUDE.html#build-and-development-commands",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "quarto render\nThis builds the entire website and outputs to the docs/ directory (configured in _quarto.yml).\n\n\n\nquarto preview\nLaunches a live preview server with auto-reload when files change.\n\n\n\nThe site is published to GitHub Pages from the docs/ directory. After making changes:\nquarto render\ngit add .\ngit commit -m \"Update website\"\ngit push"
+  },
+  {
+    "objectID": "CLAUDE.html#architecture",
+    "href": "CLAUDE.html#architecture",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Project Type: Website\nOutput Directory: docs/ (GitHub Pages serves from this directory)\nTheme: Cosmo with custom branding\nCustom Styles: styles.css contains brand-specific styling with teal (#00b3b3) primary color\n\n\n\n\nThe website consists of several .qmd (Quarto Markdown) files that define pages:\n\nindex.qmd: Home page with company overview and contact information\nabout.qmd: About page featuring owner Meredith Dalton and work examples\nlocation.qmd: Service area map (embedded Google Maps iframe)\nphotos.qmd: Photo gallery of work\n\n\n\n\nNavigation is defined in _quarto.yml under website.navbar. The navbar includes: - Home (index.qmd) - About - Location\n\n\n\nCustom CSS in styles.css uses: - Primary teal color (#00b3b3) for links and brand - Purple-to-teal gradients for visual elements - Card hover effects for interactive elements - Responsive design with Bootstrap components\n\n\n\n\nimages/: Contains business photos and logo\n\nFullLogo_Transparent.png: Company logo\nVarious .jpeg files: Before/after cleaning photos\n\n\n\n\n\n\ndocs/: Production build directory (served by GitHub Pages)\n_site/: Quarto build cache (gitignored)\n.quarto/: Quarto metadata and cache (gitignored)"
+  },
+  {
+    "objectID": "CLAUDE.html#content-editing-guidelines",
+    "href": "CLAUDE.html#content-editing-guidelines",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "When editing content: - Images are referenced using Quarto syntax: ![](images/filename.ext){width=\"300\"} - Contact information is on the home page (index.qmd) - HTML can be embedded using ```{=html} blocks (see location.qmd for example) - The site uses embedded resources (embed-resources: true) for self-contained pages"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Simply Detailed LLC",
+    "section": "",
+    "text": "Simply Detailed LLC is a locally-owned, operated, licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning services for areas that need extra attention. The possibilities are truly endless in your requests for your cleaning needs. Simply Detailed LLC strives to make every clean better, helping busy families and professionals is our specialty. Every Clean, Every Time."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Simply Detailed LLC",
+    "section": "Contact",
+    "text": "Contact\nContact us today for a free estimate!\nPhone: 865-361-9738 (text or call!)\nEmail: simplydetailed865@gmail.com\nService Area: Knoxville & Surrounding Areas\nPlease See our service area (and reviews) here!"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Simply Detailed LLC",
@@ -19,19 +68,5 @@
     "title": "About Simply Detailed LLC",
     "section": "See Our Work!",
     "text": "See Our Work!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Simply Detailed LLC",
-    "section": "",
-    "text": "Simply Detailed LLC is a locally-owned, operated, licensed and insured cleaning service in Knoxville, TN. We provide a range of services, including regular house cleaning and deep cleaning services for areas that need extra attention. The possibilities are truly endless in your requests for your cleaning needs. Simply Detailed LLC strives to make every clean better, helping busy families and professionals is our specialty. Every Clean, Every Time."
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Simply Detailed LLC",
-    "section": "Contact",
-    "text": "Contact\nContact us today for a free estimate!\nPhone: 865-361-9738 (text or call!)\nEmail: simplydetailed865@gmail.com\nService Area: Knoxville & Surrounding Areas\nPlease See our service area (and reviews) here!"
   }
 ]

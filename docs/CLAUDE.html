@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Location – Simply Detailed LLC</title>
+<title>claude – Simply Detailed LLC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,6 +18,40 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -4822,7 +4856,7 @@ transform: scale(1.1);
 <span class="menu-text">About Simply Detailed LLC</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./location.html" aria-current="page"> 
+    <a class="nav-link" href="./location.html"> 
 <span class="menu-text">Location</span></a>
   </li>  
 </ul>
@@ -4838,31 +4872,94 @@ transform: scale(1.1);
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Location</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="claude.md" class="level1">
+<h1>CLAUDE.md</h1>
+<p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This is a Quarto website for Simply Detailed LLC, a locally-owned cleaning service in Knoxville, TN. The website is a static business site built with Quarto and published to GitHub Pages.</p>
+</section>
+<section id="build-and-development-commands" class="level2">
+<h2 class="anchored" data-anchor-id="build-and-development-commands">Build and Development Commands</h2>
+<section id="rendering-the-website" class="level3">
+<h3 class="anchored" data-anchor-id="rendering-the-website">Rendering the Website</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This builds the entire website and outputs to the <code>docs/</code> directory (configured in <code>_quarto.yml</code>).</p>
+</section>
+<section id="preview-during-development" class="level3">
+<h3 class="anchored" data-anchor-id="preview-during-development">Preview During Development</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Launches a live preview server with auto-reload when files change.</p>
+</section>
+<section id="publishing" class="level3">
+<h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
+<p>The site is published to GitHub Pages from the <code>docs/</code> directory. After making changes:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Update website&quot;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
+<section id="quarto-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-configuration">Quarto Configuration</h3>
+<ul>
+<li><strong>Project Type</strong>: Website</li>
+<li><strong>Output Directory</strong>: <code>docs/</code> (GitHub Pages serves from this directory)</li>
+<li><strong>Theme</strong>: Cosmo with custom branding</li>
+<li><strong>Custom Styles</strong>: <code>styles.css</code> contains brand-specific styling with teal (#00b3b3) primary color</li>
+</ul>
+</section>
+<section id="site-structure" class="level3">
+<h3 class="anchored" data-anchor-id="site-structure">Site Structure</h3>
+<p>The website consists of several <code>.qmd</code> (Quarto Markdown) files that define pages:</p>
+<ul>
+<li><code>index.qmd</code>: Home page with company overview and contact information</li>
+<li><code>about.qmd</code>: About page featuring owner Meredith Dalton and work examples</li>
+<li><code>location.qmd</code>: Service area map (embedded Google Maps iframe)</li>
+<li><code>photos.qmd</code>: Photo gallery of work</li>
+</ul>
+</section>
+<section id="navigation" class="level3">
+<h3 class="anchored" data-anchor-id="navigation">Navigation</h3>
+<p>Navigation is defined in <code>_quarto.yml</code> under <code>website.navbar</code>. The navbar includes: - Home (index.qmd) - About - Location</p>
+</section>
+<section id="styling" class="level3">
+<h3 class="anchored" data-anchor-id="styling">Styling</h3>
+<p>Custom CSS in <code>styles.css</code> uses: - Primary teal color (#00b3b3) for links and brand - Purple-to-teal gradients for visual elements - Card hover effects for interactive elements - Responsive design with Bootstrap components</p>
+</section>
+<section id="assets" class="level3">
+<h3 class="anchored" data-anchor-id="assets">Assets</h3>
+<ul>
+<li><code>images/</code>: Contains business photos and logo
+<ul>
+<li><code>FullLogo_Transparent.png</code>: Company logo</li>
+<li>Various <code>.jpeg</code> files: Before/after cleaning photos</li>
+</ul></li>
+</ul>
+</section>
+<section id="output" class="level3">
+<h3 class="anchored" data-anchor-id="output">Output</h3>
+<ul>
+<li><code>docs/</code>: Production build directory (served by GitHub Pages)</li>
+<li><code>_site/</code>: Quarto build cache (gitignored)</li>
+<li><code>.quarto/</code>: Quarto metadata and cache (gitignored)</li>
+</ul>
+</section>
+</section>
+<section id="content-editing-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="content-editing-guidelines">Content Editing Guidelines</h2>
+<p>When editing content: - Images are referenced using Quarto syntax: <code>![](images/filename.ext){width=&quot;300&quot;}</code> - Contact information is on the home page (index.qmd) - HTML can be embedded using <code>```{=html}</code> blocks (see location.qmd for example) - The site uses embedded resources (<code>embed-resources: true</code>) for self-contained pages</p>
 
 
-</header>
-
-
-<iframe role="img" src="data:text/html; charset=UTF-8;charset=utf-8,%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%20%20%3Chead%3E%0A%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20html%2C%20body%2C%20%23mapDiv%20%7B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20margin%3A%200%3B%0A%20%20%20%20%20%20%20%20padding%3A%200%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fhead%3E%0A%20%20%3Cbody%3E%0A%20%20%20%20%3Cdiv%20id%3D%22mapDiv%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3Cscript%20nonce%3D%22y03RPGcdgjLBzui1KP6vAQ%22%3E%0A%20%20%20%20%20%20function%20onEmbedLoad%28%29%20%7B%0A%20%20%20%20%20%20%20%20initEmbed%28%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B%5B2%2C%22spotlit%22%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C11%2Cnull%2C%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C1%5D%5D%5D%5D%2Cnull%2Cnull%2C%5B%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B%5B%22467536508812831037%22%2C%224073621496616928765%22%5D%2C%22%2Fg%2F11ml04ywyc%22%2Cnull%2C%5B359583570%2C3455714711%5D%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B359493247%2C3455554637%5D%2C%5B359673883%2C3455874785%5D%5D%2Cnull%2Cnull%2C%22gcid%3Ahouse%5Fcleaning%5Fservice%22%5D%2C0%2Cnull%2Cnull%2Cnull%2C0%2Cnull%2C0%5D%5D%5D%5D%2Cnull%2C%5B%22en%5FUS%22%5D%2C%5Bnull%2Cnull%2Cnull%2C%22%2Fmaps%2Fapi%2Fjs%2FApplicationService%2EGetEntityDetails%22%2C%22%2Fmaps%2Fembed%2Fupgrade204%22%2Cnull%2C%22%2Fmaps%2Fembed%2Frecord204%22%5D%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%22I4wPaaSWDour5NoP8sS7yAY%22%2Cnull%2Cnull%2Cnull%2C%5B%5B%5B206690%2E1987329912%2C%2D83%2E9252585%2C35%2E958357%5D%2C%5B0%2C0%2C0%5D%2Cnull%2C13%2E10000038146973%5D%2Cnull%2Cnull%2C%5B%5B%220x67d05fa4750a93d%3A0x3888692b0f3f45fd%22%2C%22Simply%20Detailed%20LLC%22%2C%5B35%2E958357%2C%2D83%2E9252585%5D%2C%224073621496616928765%22%5D%2C%22Simply%20Detailed%20LLC%22%2Cnull%2C5%2C%226%20reviews%22%2Cnull%2Cnull%2C%22%28865%29%20361%2D9738%22%2Cnull%2Cnull%2Cnull%2C%5B%22%2Furl%3Fq%3Dhttps%3A%2F%2Fwww%2Esimplydetailed865%2Ecom%2F%5Cu0026opi%3D79508299%5Cu0026sa%3DU%5Cu0026ved%3D0ahUKEwjks9Lgl%2DOQAxWLFVkFHXLiDmkQ61gICigF%5Cu0026usg%3DAOvVaw057hpR5G36hiR97LscdpeD%22%2C%22simplydetailed865%2Ecom%22%2Cnull%2C%220ahUKEwjks9Lgl%2DOQAxWLFVkFHXLiDmkQ61gICigF%22%5D%2C%22House%20cleaning%20service%22%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C1%2C1%2Cnull%2Cnull%2Cnull%2C%22ChIJPalQR%5FoFfQYR%5FUU%5FDytpiDg%22%2Cnull%2Cnull%2C%220ahUKEwjks9Lgl%2DOQAxWLFVkFHXLiDmkQ8BcIAygA%22%2Cnull%2Cnull%2C%5B%22tel%3A%2B18653619738%22%5D%2Cnull%2Cnull%2Cnull%2C1%2Cnull%2C%5B%5B%5B%22Saturday%22%2C6%2C%5B2025%2C11%2C8%5D%2C%5B%5B%229%E2%80%AFAM%E2%80%934%E2%80%AFPM%22%2C%5B%5B9%5D%2C%5B16%5D%5D%5D%5D%2C0%2C1%5D%2C%5B%22Sunday%22%2C7%2C%5B2025%2C11%2C9%5D%2C%5B%5B%229%E2%80%AFAM%E2%80%934%E2%80%AFPM%22%2C%5B%5B9%5D%2C%5B16%5D%5D%5D%5D%2C0%2C1%5D%2C%5B%22Monday%22%2C1%2C%5B2025%2C11%2C10%5D%2C%5B%5B%228%E2%80%AFAM%E2%80%936%E2%80%AFPM%22%2C%5B%5B8%5D%2C%5B18%5D%5D%5D%5D%2C0%2C1%5D%2C%5B%22Tuesday%22%2C2%2C%5B2025%2C11%2C11%5D%2C%5B%5B%228%E2%80%AFAM%E2%80%936%E2%80%AFPM%22%2C%5B%5B8%5D%2C%5B18%5D%5D%5D%5D%2C0%2C1%2C%5B%22Veterans%20Day%20might%20affect%20these%20hours%22%2C%22Veterans%20Day%22%2C2%5D%5D%2C%5B%22Wednesday%22%2C3%2C%5B2025%2C11%2C12%5D%2C%5B%5B%228%E2%80%AFAM%E2%80%936%E2%80%AFPM%22%2C%5B%5B8%5D%2C%5B18%5D%5D%5D%5D%2C0%2C1%5D%2C%5B%22Thursday%22%2C4%2C%5B2025%2C11%2C13%5D%2C%5B%5B%228%E2%80%AFAM%E2%80%9312%E2%80%AFAM%22%2C%5B%5B8%5D%2C%5B6%5D%5D%5D%5D%2C0%2C1%5D%2C%5B%22Friday%22%2C5%2C%5B2025%2C11%2C14%5D%2C%5B%5B%2212%E2%80%936%E2%80%AFAM%22%2C%5B%5B8%5D%2C%5B18%5D%5D%5D%2C%5B%228%E2%80%AFAM%E2%80%936%E2%80%AFPM%22%5D%5D%2C0%2C1%5D%5D%2C%5B%5B%22Saturday%22%2C6%2C%5B2025%2C11%2C8%5D%2C%5B%5B%229%E2%80%AFAM%E2%80%934%E2%80%AFPM%22%2C%5B%5B9%5D%2C%5B16%5D%5D%5D%5D%2C0%2C1%5D%2C0%2C1%2Cnull%2C%5B%22Open%20%E2%8B%85%20Closes%204%E2%80%AFPM%22%2C%5B%5B0%2C4%2C%5Bnull%2C%5B4279862841%2C4285388172%5D%5D%5D%5D%5D%2C%5B%22Open%20%E2%8B%85%20Closes%204%E2%80%AFPM%22%2C%5B%5B0%2C4%2C%5Bnull%2C%5B4279862841%2C4285388172%5D%5D%5D%5D%5D%2Cnull%2Cnull%2C%5B%22Open%22%2C%5B%5B0%2C4%2C%5Bnull%2C%5B4279862841%2C4285388172%5D%5D%5D%5D%5D%5D%2C6%2Cnull%2Cnull%2Cnull%2C1%5D%5D%5D%2Cnull%2Cnull%2Cnull%2C0%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B1%5D%5D%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20function%20onApiLoad%28%29%20%7B%0A%20%20%20%20%20%20%20%20var%20embed%20%3D%20document%2EcreateElement%28%27script%27%29%3B%0A%20%20%20%20%20%20%20%20embed%2Esrc%20%3D%20%22https%3A%2F%2Fmaps%2Egstatic%2Ecom%2Fmaps%2Dapi%2Dv3%2Fembed%2Fjs%2F62%2F13e%2Finit%5Fembed%2Ejs%22%3B%0A%20%20%20%20%20%20%20%20document%2Ebody%2EappendChild%28embed%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fscript%3E%0A%20%20%20%20%3Clink%20rel%3D%22preload%22%20href%3D%22https%3A%2F%2Fmaps%2Egstatic%2Ecom%2Fmaps%2Dapi%2Dv3%2Fembed%2Fjs%2F62%2F13e%2Finit%5Fembed%2Ejs%22%20nonce%3D%22y03RPGcdgjLBzui1KP6vAQ%22%20as%3D%22script%22%20%2F%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A%2F%2Fmaps%2Egoogleapis%2Ecom%2Fmaps%2Fapi%2Fjs%3Fclient%3Dgoogle%2Dmaps%2Dembed%26amp%3Bpaint%5Forigin%3D%26amp%3Blibraries%3Dgeometry%2Csearch%26amp%3Bv%3Dweekly%26amp%3Bloading%3Dasync%26amp%3Blanguage%3Den%5FUS%26amp%3Bcallback%3DonApiLoad%22%20nonce%3D%22y03RPGcdgjLBzui1KP6vAQ%22%20async%20defer%3E%3C%2Fscript%3E%0A%20%20%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A" width="600" height="450" style="border:0;" allowfullscreen loading="lazy">
-</iframe>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
