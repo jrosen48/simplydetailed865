@@ -1,0 +1,101 @@
+/* css styles for Simply Detailed LLC */
+
+:root {
+  --bs-primary: #00b3b3;  /* teal-like "clean" color */
+  --bs-link-color: #00b3b3;
+  --bs-link-hover-color: #009999;
+  --purple-gradient: #6f42c1;
+  --teal-gradient: #00b3b3;
+}
+
+/* Hero section styling */
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+}
+
+/* Service cards hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.15) !important;
+}
+
+/* Service icons */
+.service-icon {
+  filter: drop-shadow(0 2px 4px rgba(111, 66, 193, 0.2));
+}
+
+/* Button styling */
+.btn {
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
+}
+
+/* Contact info styling */
+.contact-info {
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(111, 66, 193, 0.15);
+}
+
+/* Body background */
+body {
+  background-color: #fafbfc;
+}
+
+/* Navigation styling */
+.navbar-brand {
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--teal-gradient), var(--purple-gradient));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(135deg, var(--purple-gradient), var(--teal-gradient));
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Gallery image styling */
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Gallery specific styling */
+.gallery-card {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.gallery-card img {
+  transition: all 0.3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}

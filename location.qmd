@@ -1,14 +1,28 @@
 ---
 title: "Location"
+format:
+  html:
+    embed-resources: false
 ---
 
+## Service Area
+
+We serve Knoxville and surrounding areas in Tennessee.
+
 ```{=html}
-<iframe
-  src="https://www.google.com/maps?q=Simply+Detailed+LLC,Knoxville,TN&output=embed"
-  width="600"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
+<div style="max-width: 600px; margin: 0 auto;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d257824.8604506005!2d-84.09006493261381!3d35.95824434078751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d05fa4750a93d%3A0x3888692b0f3f45fd!2sSimply%20Detailed%20LLC!5e1!3m2!1sen!2sus!4v1762627949443!5m2!1sen!2sus"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 ```
+
+**Address:** Knoxville, TN  
+**Phone:** 865-361-9738  
+**Email:** simplydetailed865@gmail.com  
